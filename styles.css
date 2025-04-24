@@ -1,118 +1,9 @@
-/* General Reset */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-}
-
-/* Header Styling */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-header .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li {
-    margin: 0 1rem;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
-header nav ul li a.signup {
-    color: purple;
-    font-weight: bold;
-}
-
-/* Main Content */
-main {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
-    max-width: 1200px;
-    margin: auto;
-}
-
-main .text {
-    max-width: 50%;
-}
-
-main .text h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 1rem;
-}
-
-main .text p {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 1rem;
-}
-
-main .buttons {
-    margin: 1rem 0;
-}
-
-main .buttons button {
-    margin: 0.5rem;
-    padding: 0.8rem 1.5rem;
-    border: 2px solid purple;
-    background-color: transparent;
-    color: purple;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-main .buttons button.become-creator {
-    background-color: purple;
-    color: #fff;
-}
-
-main .benefits {
-    list-style: none;
-    padding: 0;
-    margin-top: 1rem;
-}
-
-main .benefits li {
-    margin: 0.5rem 0;
-    color: #333;
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-}
-
-main .benefits li::before {
-    content: "✔";
-    color: purple;
-    font-weight: bold;
-    margin-right: 0.5rem;
-}
-
 /* Image Section */
 main .image {
     position: relative;
     max-width: 40%;
     text-align: center;
+    margin: auto; /* Center the image and card horizontally */
 }
 
 main .image img {
@@ -121,9 +12,9 @@ main .image img {
 }
 
 main .image .earnings {
-    position: absolute;
-    bottom: 10%;
-    right: 5%;
+    position: static; /* Reset the positioning to place it below the image */
+    margin-top: 1rem; /* Add space between the image and the card */
+    display: inline-block;
     background-color: white;
     padding: 1rem;
     border-radius: 5px;
